@@ -11,6 +11,8 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.StructuredTaskScope;
@@ -49,7 +51,7 @@ public abstract class ListLoader<T> {
         HttpRequest request = HttpRequest.newBuilder(URI.create(url))
                 .GET()
                 .build();
-        return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
+        return client.send(request, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8)).body();
     }
 
 }
