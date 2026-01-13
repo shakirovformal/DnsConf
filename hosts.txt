@@ -11,6 +11,7 @@
 # В итоговом hosts указанно меньше сайтов чем проксируется через DNS.
 
 # Работающие IP без прокси
+127.0.0.1 localhost
 ::1 ip6-localhost
 130.255.77.28 ntc.party
 157.240.245.174 instagram.com
@@ -2959,6 +2960,7 @@
 0.0.0.0 o.xbox.com
 0.0.0.0 o2o.api.xiaomi.com
 0.0.0.0 o365diagtelemetry.trafficmanager.net
+0.0.0.0 obus-cn.dc.heytapmobi.com
 0.0.0.0 obus-config-cn.heytapmobi.com
 0.0.0.0 obus-dc-eu.heytapmobile.com
 0.0.0.0 obus-dc-ru.heytapmobile.com
